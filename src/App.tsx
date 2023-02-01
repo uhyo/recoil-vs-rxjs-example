@@ -1,16 +1,16 @@
-import { useState } from "react";
 import { RecoilRoot } from "recoil";
 import { RecoilApp } from "./recoil/RecoilApp";
+import { RxJsApp } from "./rxjs/RxJsApp";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
       <h1>Recoil</h1>
       <RecoilRoot>
         <RecoilApp />
       </RecoilRoot>
+      <h1>RxJS</h1>
+      <RxJsApp />
     </div>
   );
 }
